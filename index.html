@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SebuMathew - Personal Profile</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <nav class="navbar">
+            <a class="navbar-brand" href="index.html">
+                <span class="animate-text">M</span><span class="animate-text">Z</span>
+            </a>
+            <!-- Rest of your navbar content -->
+        </nav>
+        
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="https://www.linkedin.com/in/sebu-philip-mathew" target="_blank" class="nav-link social-icon">
+                  <img src="linkedin.png" alt="LinkedIn" width="24" height="24">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.instagram.com/mathewzebu/" target="_blank" class="nav-link social-icon">
+                  <img src="instagram.png" alt="Instagram" width="24" height="24">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+    <main>
+        <section id="about">
+            <div class="header-content">
+                <h1>Sebu Philip Mathew</h1>
+                <p class="job-title">Java Full-Stack Developer</p>
+            </div>
+            <div class="main-content">
+                <img src="sebu2024.jpeg" alt="Sebu Philip Mathew" class="profile-image">
+                <div class="bio-content">
+                    <p class="bio">
+                      <strong>Hi</strong>, I'm Sebu Philip Mathew.
+                        I'm a passionate and dedicated full-stack Java developer,I recently completed my training and internship at QSpiders. I specialize in both front-end and back-end development, working with technologies like Core Java, Spring Boot, Hibernate, JDBC, SQL, HTML, CSS, and JavaScript to build dynamic, functional, and visually appealing web applications.
+                        
+                        My experience at QSpiders has provided me with real-world exposure to the entire development lifecycle, from designing responsive user interfaces to creating efficient, scalable back-end systems. I'm particularly focused on creating seamless user experiences by integrating robust server-side logic with clean and modern front-end designs.
+                        
+                        With a strong foundation in Java full-stack development, I'm committed to learning, evolving, and delivering high-quality code that meets both user needs and business goals.
+                    </p>
+                </div>
+            </div>
+        </section>
+      
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Core Java</li>
+                <li>Hibernate</li>
+                <li>JDBC</li>
+                <li>Spring FrameWork</li>
+                <li>Sql</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Job finder</h3>
+                <p> 
+                    Proactive and skilled Job Finder with expertise in job market research, resume writing, and
+                    interview coaching. Adept at creating tailored job search strategies and building 
+                    professional networks to help clients secure rewarding employment opportunities. Proven
+                    trackrecord in improving client interview success rates and establishing employer
+                    partnerships. Dedicated to providing personalized career advice to achieve clients' career
+                    goals.</p>
+            </div>
+            <div class="project">
+                <h3>Weather App</h3>
+                <p>A weather application that provides real-time weather data using a third-party API.</p>
+            </div>
+            <div class="project">
+                <h3>Online Movie Ticket System</h3>
+                <p> User-friendly online movie ticket system for easy booking, real-time seat selection, secure
+                    payments, and instant ticket confirmation. Enhances customer experienceand boosts sales
+                    for cinemas.</p>
+            </div>
+            <div class="project">
+              <h3>Hospital Management System</h3>
+              <p>Developed a hospital management system with a user-friendly interface and robust backend using Java, Spring, Hibernate, and MySQL/PostgreSQL. Streamlined workflows, managed records, and ensured reliability with JUnit testing and Git version control."</p>
+
+
+            </div>
+        </section>
+        
+        <section id="fullstack">
+            <h2>Java Full-Stack Development</h2>
+            <p>As a full-stack Java developer, I have expertise in building complete web applications using front-end and back-end technologies. Here's an overview of the Java full-stack development process:</p>
+            
+            <!-- Adding relevant images -->
+            <div class="fullstack-images">
+                <img src="alvaro-reyes-qWwpHwip31M-unsplash.jpg" alt="Java Development" class="tech-image">
+                <img src="pexels-cottonbro-5473311.jpg" alt="Spring Boot Framework" class="tech-image">
+                <img src="pexels-goumbik-574077.jpg
+                " alt="Database Management" class="tech-image">
+            </div>
+
+            <!-- Description of Full-Stack Java Process -->
+            <p>The process includes building user interfaces using HTML, CSS, and JavaScript, and integrating with the server-side using Java, Spring Boot, and database technologies like SQL. I ensure efficient backend logic with smooth frontend delivery to provide users with seamless experiences.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form" action="submit_contact.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 mathewzebu. All rights reserved.</p>
+    </footer>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

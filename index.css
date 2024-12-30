@@ -1,0 +1,413 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+.container a{
+    color: #17a2b8;
+    font-size: large;
+}
+.navbar-brand {
+    font-style: oblique;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.animate-text {
+    display: inline-block;
+    animation: popIn 0.5s ease-out forwards;
+    opacity: 0;
+}
+
+.animate-text:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+header {
+    background-color: #17a2b8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: top 0.3s;
+    background-color: #17a2b8;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+.social-icon {
+    display: flex; /* Use flex to align icon and text */
+    align-items: center;
+}
+
+.social-icon img {
+    width: 25px; /* Set the size of the icons */
+    height: 25px; /* Set the size of the icons */
+    margin-left: 5px; /* Add space between text and icon */
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for social icons */
+.social-icon img:hover {
+    transform: scale(1.1); /* Slightly zoom on hover */
+}
+
+main {
+    padding: 2rem 0;
+}
+
+#about {
+    background-color: #f9f9f9;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #17a2b8;
+}
+
+
+.header-content {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    color: #17a2b8;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.job-title {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.main-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.profile-image {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 5px;
+    background: linear-gradient(45deg, #1d60d2, #4ecdc4);
+    transition: transform 0.3s ease;
+     
+}
+
+
+.profile-image:hover {
+    transform: translateY(-10px);
+}
+
+.bio-content {
+    flex: 1;
+}
+
+.bio {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image {
+        margin-bottom: 1rem;
+    }
+
+    .bio {
+        text-align: center;
+    }
+}
+ /* Styles for the Skills section */
+#skills {
+    background-color: #f8f9fa; /* Light background for better contrast */
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+#skills h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Updated Skills List */
+#skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Align skills in a flexible grid */
+    justify-content: center;
+    gap: 15px; /* Gap between skill items */
+}
+
+#skills li {
+    background-color: #17a2b8; /* Modern teal color */
+    color: #ffffff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px; /* More rounded corners */
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 10px rgba(56, 153, 205, 0.1); /* Subtle shadow for each item */
+}
+
+/* Hover effect with color change and slight movement */
+#skills li:hover {
+    background-color: #138496; /* Darker teal on hover */
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0px 8px 20px rgba(61, 150, 199, 0.2); /* More shadow on hover */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    #skills ul {
+        flex-direction: column; /* Stack skills vertically on smaller screens */
+    }
+
+    #skills li {
+        width: 80%; /* Take up more space on smaller screens */
+        margin: 10px auto;
+    }
+}
+
+
+
+.project {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px  #17a2b8;
+}
+
+.project h3 {
+    color: #17a2b8;
+    margin-bottom: 0.5rem;
+}
+.resume{
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+ .resume h3{
+    
+    color:#17a2b8; 
+     margin-bottom: 0.5rem;
+ }   
+ .resume:hover{
+    transform: translateY(-5px);
+    box-shadow:0 5px 15px  #17a2b8 ;
+ }
+/* Styles for the Java Full-Stack Development section */
+#fullstack {
+    background-color: #4b83d6; /* Dark background for a modern look */
+    color: #fff;
+    padding: 60px;
+    margin: 40px 0;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+#fullstack h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #e5e8e5; /* Bright green accent color for heading */
+}
+
+#fullstack p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: #e0e0e0; /* Softer white for better readability */
+}
+
+/* Styles for the fullstack images */
+.fullstack-images {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px; /* Adds more spacing between images */
+}
+
+.fullstack-images .tech-image {
+    width: 28%;
+    border-radius: 15px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    filter: grayscale(100%); /* Make images grayscale */
+    box-shadow: 0px 5px 15px rgba(175, 9, 9, 0.3); /* Soft shadow */
+}
+
+/* Hover effect */
+.fullstack-images .tech-image:hover {
+    transform: scale(1.1); /* More noticeable zoom on hover */
+    filter: grayscale(0%); /* Remove grayscale on hover */
+    box-shadow: 0px 10px 30px rgba(214, 217, 223, 0.7); /* Bigger shadow on hover */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .fullstack-images {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .fullstack-images .tech-image {
+        width: 80%; /* Images take up more space in mobile view */
+    }
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .project {
+        padding: 1rem;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+ 
